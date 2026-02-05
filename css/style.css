@@ -1,0 +1,413 @@
+/* Together Against TB - Website Styles */
+
+:root {
+  --navy: #1a3a5c;
+  --red: #c41e3a;
+  --red-dark: #a01830;
+  --light-gray: #f8f9fa;
+  --white: #ffffff;
+  --text: #333333;
+  --text-light: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: var(--navy);
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #2d5a8a 100%);
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--red-dark);
+  color: var(--white);
+}
+
+.btn-outline {
+  border: 2px solid var(--white);
+  color: var(--white);
+  margin-left: 15px;
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+/* Page Header */
+.page-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+}
+
+/* Sections */
+section {
+  padding: 70px 20px;
+}
+
+section.alt-bg {
+  background: var(--light-gray);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section .subtitle {
+  text-align: center;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* Mission Section */
+.mission {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-statement {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--navy);
+  border-left: 4px solid var(--red);
+  padding-left: 25px;
+  text-align: left;
+  margin: 30px 0;
+}
+
+/* Programs Grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.program-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.program-card h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.program-card p {
+  color: var(--text-light);
+}
+
+/* Impact Stats */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.impact-stat {
+  padding: 30px;
+}
+
+.impact-stat .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.impact-stat .label {
+  color: var(--text-light);
+  margin-top: 10px;
+}
+
+/* About Content */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.about-content h3 {
+  color: var(--navy);
+  margin: 30px 0 15px;
+}
+
+/* Donate Section */
+.donate-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.donate-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.donate-card h3 {
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.donate-card p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.tax-info {
+  background: var(--light-gray);
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+/* Contact */
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content p {
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+
+.contact-email {
+  font-size: 1.4rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.contact-email a {
+  color: var(--red);
+}
+
+/* Footer */
+footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer p {
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+footer a:hover {
+  opacity: 1;
+  color: var(--white);
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .btn {
+    display: block;
+    margin: 10px auto;
+    max-width: 250px;
+  }
+
+  .btn-outline {
+    margin-left: 0;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}

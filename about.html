@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Together Against TB, a nonprofit founded by TB researchers to support patients in the San Francisco Bay Area.">
+  <title>About Us | Together Against TB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Together Against TB Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>About Us</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container about-content">
+      <h2>Our Story</h2>
+      <p>Together Against TB is an independent 501(c)(3) nonprofit organization founded on World TB Day 2024. We were created by TB researchers who saw firsthand the challenges faced by individuals and families navigating tuberculosis treatment.</p>
+
+      <p>Our founders understood that treating TB requires more than just medical care. Patients often face isolation, financial hardship, and practical challenges that can make an already difficult situation even harder. Together Against TB was born from the belief that comprehensive support can make a real difference in treatment outcomes and quality of life.</p>
+
+      <h3>Our Partnership</h3>
+      <p>We work directly with the San Francisco Department of Public Health TB Clinic to identify and support people navigating TB treatment. This partnership allows us to reach patients when they need help most and provide support that complements the excellent medical care they receive.</p>
+
+      <h3>Our Mission</h3>
+      <blockquote class="mission-statement">
+        We are dedicated to supporting the mental, physical, social, and financial health of individuals affected by tuberculosis in San Francisco and the Bay Area. Through direct aid, mutual support, and community connection, we ensure that no one faces TB treatment alone.
+      </blockquote>
+
+      <h3>Our Values</h3>
+      <p><strong>Dignity:</strong> Every person deserves to be treated with respect and to have their basic needs met during treatment.</p>
+      <p><strong>Community:</strong> We believe in the power of mutual support and connection to help people through difficult times.</p>
+      <p><strong>Direct Action:</strong> We focus on providing tangible, immediate support that makes a real difference in people's lives.</p>
+      <p><strong>Advocacy:</strong> We work to improve systems and policies that affect TB patients throughout California.</p>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="container" style="text-align: center;">
+      <h2>Join Our Mission</h2>
+      <p class="subtitle">Help us ensure that no one in the Bay Area faces TB treatment alone.</p>
+      <a href="donate.html" class="btn btn-primary">Support Our Work</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Together Against TB is a 501(c)(3) nonprofit organization.</p>
+      <p>All donations are tax-deductible.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
