@@ -1,10 +1,12 @@
 /* Together Against TB - Website Styles */
 
 :root {
-  --navy: #1a3a5c;
-  --red: #c41e3a;
-  --red-dark: #a01830;
-  --light-gray: #f8f9fa;
+  --navy: #101160;
+  --red: #df3636;
+  --red-dark: #c42e2e;
+  --teal: #087e8b;
+  --light-blue: #6096ba;
+  --light-bg: #fdfafa;
   --white: #ffffff;
   --text: #333333;
   --text-light: #666666;
@@ -23,12 +25,12 @@ body {
 }
 
 a {
-  color: var(--red);
+  color: var(--teal);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--red-dark);
+  color: var(--navy);
 }
 
 img {
@@ -107,7 +109,7 @@ nav a.active {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #2d5a8a 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--light-blue) 100%);
   color: var(--white);
   padding: 80px 20px;
   text-align: center;
@@ -177,7 +179,7 @@ section {
 }
 
 section.alt-bg {
-  background: var(--light-gray);
+  background: var(--light-bg);
 }
 
 section h2 {
@@ -309,7 +311,7 @@ section .subtitle {
 }
 
 .tax-info {
-  background: var(--light-gray);
+  background: var(--light-bg);
   border-radius: 8px;
   padding: 25px;
   max-width: 600px;
