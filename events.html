@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Upcoming events for Together Against TB — join us in the fight to end TB and HIV.">
+  <title>Events | Together Against TB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .event-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 35px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      max-width: 800px;
+      margin: 40px auto 0;
+    }
+
+    .event-date {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 6px 16px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .event-card h3 {
+      color: var(--navy);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .event-card p {
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+
+    .event-card .btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Together Against TB Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Upcoming Events</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="event-card">
+        <span class="event-date">July 19, 2026</span>
+        <h3>SF AIDS Walk</h3>
+        <p>Join the UCSF Center for Tuberculosis and Together Against TB as we walk for a future free from TB and HIV. TB remains the leading cause of death among people living with HIV/AIDS, and in San Francisco, individuals facing both diseases need our support more than ever.</p>
+        <p>Together Against TB provides direct aid—food, housing support, and essential supplies—to people undergoing TB treatment in our community. When you donate to our team, you're ensuring that no one faces TB treatment alone.</p>
+        <p>Walk with us. Donate today. Together, we can end TB.</p>
+        <a href="https://sf.aidswalk.net/Account/Register?teamid=226099" class="btn btn-primary" target="_blank" rel="noopener">Join Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Together Against TB is a 501(c)(3) nonprofit organization.</p>
+      <p>All donations are tax-deductible.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="events.html">Events</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
