@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about tuberculosis (TB): what it is, how it spreads, symptoms, treatment, and TB in California and San Francisco.">
+  <title>About TB | Together Against TB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .callout-box {
+      background: #e8f4f8;
+      border-left: 4px solid var(--teal);
+      padding: 20px 25px;
+      border-radius: 0 8px 8px 0;
+      margin: 30px 0;
+    }
+
+    .callout-box p {
+      color: var(--text);
+      margin: 0;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .info-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .info-card.latent {
+      border-top: 4px solid var(--teal);
+    }
+
+    .info-card.active {
+      border-top: 4px solid var(--red);
+    }
+
+    .info-card h3 {
+      color: var(--navy);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .info-card ul {
+      padding-left: 20px;
+      color: var(--text-light);
+    }
+
+    .info-card ul li {
+      margin-bottom: 8px;
+    }
+
+    .ca-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .ca-stat {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--red);
+    }
+
+    .ca-stat .number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .ca-stat .label {
+      color: var(--text-light);
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .section-intro {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-intro p {
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .section-intro h3 {
+      color: var(--navy);
+      margin: 30px 0 12px;
+    }
+
+    .section-intro ul {
+      padding-left: 22px;
+      color: var(--text-light);
+    }
+
+    .section-intro ul li {
+      margin-bottom: 8px;
+    }
+
+    .not-spread-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .not-spread-list li::before {
+      content: "✗  ";
+      color: var(--red);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Together Against TB Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about-tb.html" class="active">About TB</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>About Tuberculosis (TB)</h1>
+    </div>
+  </section>
+
+  <!-- What is TB -->
+  <section>
+    <div class="container section-intro">
+      <h2 style="text-align: left; margin-bottom: 20px;">What is TB?</h2>
+      <p>Tuberculosis (TB) is an infectious disease caused by the bacterium <em>Mycobacterium tuberculosis</em>. While TB most commonly affects the lungs, it can affect nearly any part of the body, including the kidneys, spine, and brain.</p>
+      <p>TB is preventable and curable — but without treatment, it can be life-threatening. Globally, TB is one of the leading infectious disease killers, causing approximately 1.3 million deaths in 2022. TB is also the leading cause of death among people living with HIV.</p>
+
+      <div class="callout-box">
+        <p><strong>TB is curable.</strong> With the right treatment and support, people with TB can and do recover fully. Organizations like Together Against TB exist to ensure that everyone has what they need to complete treatment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latent vs Active TB -->
+  <section class="alt-bg">
+    <div class="container">
+      <h2>TB Infection vs. TB Disease</h2>
+      <p class="subtitle">Not everyone infected with TB bacteria becomes sick. There are two distinct stages.</p>
+      <div class="two-col-grid">
+        <div class="info-card latent">
+          <h3>Latent TB Infection (LTBI)</h3>
+          <ul>
+            <li>TB bacteria are present in the body but <strong>inactive</strong> (dormant)</li>
+            <li>No symptoms — you feel completely healthy</li>
+            <li>Cannot spread TB to others</li>
+            <li>About 1 in 4 people worldwide has latent TB</li>
+            <li>Without treatment, about 5–10% will develop active TB disease at some point in their life</li>
+            <li>Treatment for LTBI can prevent progression to active disease</li>
+          </ul>
+        </div>
+        <div class="info-card active">
+          <h3>Active TB Disease</h3>
+          <ul>
+            <li>TB bacteria are <strong>actively multiplying</strong> and causing illness</li>
+            <li>Symptoms are present and can worsen over time</li>
+            <li>Can spread TB to others through the air</li>
+            <li>Requires prompt medical treatment with antibiotics</li>
+            <li>Treatment typically lasts 6 months</li>
+            <li>Most people recover fully with proper treatment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How TB Spreads & Symptoms -->
+  <section>
+    <div class="container">
+      <div class="two-col-grid">
+        <div class="section-intro" style="max-width: none;">
+          <h2 style="text-align: left; margin-bottom: 20px;">How TB Spreads</h2>
+          <p>TB spreads through the air when a person with active pulmonary TB coughs, sneezes, speaks, or sings. Tiny infectious droplets can linger in the air for hours. Prolonged, close contact is typically needed for transmission.</p>
+          <h3>TB is NOT spread by:</h3>
+          <ul class="not-spread-list">
+            <li>Shaking hands or hugging</li>
+            <li>Sharing food or drinks</li>
+            <li>Kissing</li>
+            <li>Touching bed linens or toilet seats</li>
+            <li>Contact with surfaces or objects</li>
+          </ul>
+        </div>
+        <div class="section-intro" style="max-width: none;">
+          <h2 style="text-align: left; margin-bottom: 20px;">Signs &amp; Symptoms</h2>
+          <p>Symptoms of active TB disease include:</p>
+          <ul>
+            <li>Persistent cough lasting 3 weeks or longer</li>
+            <li>Coughing up blood or sputum</li>
+            <li>Chest pain</li>
+            <li>Fatigue and weakness</li>
+            <li>Night sweats</li>
+            <li>Fever and chills</li>
+            <li>Loss of appetite</li>
+            <li>Unexplained weight loss</li>
+          </ul>
+          <p style="margin-top: 15px;">Symptoms may be mild at first and gradually worsen. TB outside the lungs may cause symptoms in other parts of the body.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testing & Treatment -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="two-col-grid">
+        <div class="info-card" style="border-top: 4px solid var(--navy);">
+          <h3>Testing &amp; Diagnosis</h3>
+          <p style="color: var(--text-light); margin-bottom: 15px;">Testing is recommended for people at higher risk, including those who have been in close contact with someone with active TB, people living with HIV, and people born in countries with high rates of TB.</p>
+          <ul>
+            <li><strong>TB skin test (TST)</strong> or <strong>TB blood test (IGRA)</strong>: Checks whether you have been infected with TB bacteria</li>
+            <li><strong>Chest X-ray</strong>: Looks for signs of TB disease in the lungs</li>
+            <li><strong>Sputum culture</strong>: Confirms active TB and tests for drug resistance</li>
+          </ul>
+        </div>
+        <div class="info-card" style="border-top: 4px solid var(--teal);">
+          <h3>Treatment</h3>
+          <p style="color: var(--text-light); margin-bottom: 15px;">TB is curable with antibiotics. It is essential to take all medications as prescribed for the full duration — stopping early can lead to drug resistance.</p>
+          <ul>
+            <li><strong>Standard treatment:</strong> 4 antibiotics for 2 months, then 2 antibiotics for 4 more months (6 months total)</li>
+            <li><strong>Drug-resistant TB (MDR-TB)</strong> requires longer treatment with second-line medications</li>
+            <li><strong>Directly Observed Therapy (DOT):</strong> A healthcare worker observes medication doses to support completion and prevent resistance</li>
+            <li>Latent TB is also treatable with shorter regimens to prevent it from becoming active</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TB in California -->
+  <section>
+    <div class="container">
+      <h2>TB in California</h2>
+      <p class="subtitle">California reports more TB cases than any other U.S. state and is home to roughly one in five cases nationally.</p>
+
+      <div class="ca-stats-grid">
+        <div class="ca-stat">
+          <div class="number">~2,000+</div>
+          <div class="label">TB cases reported in California each year</div>
+        </div>
+        <div class="ca-stat">
+          <div class="number">~22%</div>
+          <div class="label">Share of all U.S. TB cases reported in California</div>
+        </div>
+        <div class="ca-stat">
+          <div class="number">&gt;85%</div>
+          <div class="label">Of California TB cases occurring in foreign-born persons</div>
+        </div>
+        <div class="ca-stat">
+          <div class="number">2&times;</div>
+          <div class="label">California's TB rate compared to the national average</div>
+        </div>
+      </div>
+
+      <div class="section-intro" style="margin-top: 40px;">
+        <p>TB in California disproportionately affects immigrant communities, people experiencing homelessness, people living with HIV, and those with limited access to healthcare. These social determinants make TB not just a medical issue, but a social justice issue.</p>
+        <p>The California Department of Public Health (CDPH) TB Control Branch works with local health departments across the state to diagnose, treat, and prevent TB. California is also a national leader in TB research and advocacy — including through the <a href="https://ctca.org/coalition-for-a-tb-free-ca/" target="_blank" rel="noopener">Coalition for a TB-Free California</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TB in SF -->
+  <section class="alt-bg">
+    <div class="container section-intro">
+      <h2 style="text-align: left; margin-bottom: 20px;">TB in San Francisco</h2>
+      <p>San Francisco consistently has one of the higher TB rates among California counties. The city's dense urban environment and high proportion of foreign-born residents contribute to this elevated burden.</p>
+      <p>TB in San Francisco disproportionately affects immigrant communities, people experiencing homelessness, and people living with HIV. Many individuals undergoing TB treatment face additional challenges — including housing instability, lost wages during isolation, and the difficulty of completing a 6-month medication regimen without support.</p>
+      <p>The <strong>San Francisco Department of Public Health (SFDPH) TB Clinic</strong> provides free testing, diagnosis, and treatment for TB. Together Against TB works directly with the SF TB Clinic to identify individuals who could benefit from our programs.</p>
+
+      <div class="callout-box">
+        <p><strong>No one should face TB treatment alone.</strong> Together Against TB was founded because we saw our neighbors in San Francisco facing impossible choices during treatment — between rent and groceries, between medical appointments and other essentials. We're here to help bridge that gap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section>
+    <div class="container section-intro">
+      <h2 style="text-align: left; margin-bottom: 20px;">Resources &amp; Getting Help</h2>
+      <p>If you think you or someone you know may have TB, contact a healthcare provider or your local health department right away. TB testing and treatment are <strong>free</strong> through public health programs in California.</p>
+      <h3>Key Resources</h3>
+      <ul>
+        <li><strong>SF TB Clinic (SFDPH):</strong> Free TB testing and treatment for San Francisco residents</li>
+        <li><strong>California Department of Public Health – TB Control Branch:</strong> Information and resources for Californians</li>
+        <li><strong>Coalition for a TB-Free California:</strong> <a href="https://ctca.org/coalition-for-a-tb-free-ca/" target="_blank" rel="noopener">ctca.org/coalition-for-a-tb-free-ca</a></li>
+        <li><strong>CDC Tuberculosis:</strong> National information on TB prevention, testing, and treatment</li>
+        <li><strong>Together Against TB:</strong> Direct aid and support for Bay Area residents undergoing TB treatment — <a href="contact.html">contact us</a> to learn more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="alt-bg">
+    <div class="container" style="text-align: center;">
+      <h2>Help Us Support TB Patients</h2>
+      <p class="subtitle">Your donation provides care packages, emergency housing support, and community to Bay Area neighbors facing TB treatment.</p>
+      <a href="donate.html" class="btn btn-primary">Donate Today</a>
+      <a href="programs.html" class="btn btn-outline" style="margin-left: 15px;">See Our Programs</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Together Against TB is a 501(c)(3) nonprofit organization.</p>
+      <p>All donations are tax-deductible.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="about-tb.html">About TB</a>
+        <a href="programs.html">What We Do</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
