@@ -2,6 +2,8 @@
 
 This guide is for anyone posting to the Together Against TB blog. No coding experience needed — everything can be done in your web browser on GitHub.
 
+Posts are reviewed before they go live. When you've finished your changes, you'll submit them for approval and Sophie will publish them.
+
 ---
 
 ## Before you start
@@ -46,15 +48,25 @@ Write your post in a Google Doc or notes app first. Have ready:
 | `[Opening paragraph…]` | Your actual paragraphs — delete the placeholder text and type yours |
 
 10. Delete any sections you don't need (e.g. the bullet list, optional heading)
-11. Scroll down to **Commit changes**, write a short message like `Add post: World TB Day 2026`, and click **Commit changes**
+11. Scroll down to **Commit changes** and click it to open the dialog
+12. Write a short description like `Add post: World TB Day 2026`
+13. Select **"Create a new branch for this commit"** — GitHub will suggest a branch name, which is fine to keep
+14. Click **Propose changes**
+
+> You'll land on an "Open a pull request" page — **don't click anything yet**. Continue to Step 3 first.
 
 ---
 
 ## Step 3 — Add the post to the blog listing page
 
-1. Go back to the repository root and open **`blog.html`**
-2. Click the **pencil icon** to edit it
-3. Find this comment block (use `Ctrl+F` / `Cmd+F` to search for `HOW TO ADD`):
+You need to make one more edit before submitting for review. Stay on your new branch.
+
+1. Click **← Code** (top-left) to go back to the repository
+2. You should see a yellow banner saying your branch had recent pushes — **ignore it for now**
+3. Switch to your branch: click the branch dropdown (it says `main` by default) and select your new branch name
+4. Open **`blog.html`** from the file list
+5. Click the **pencil icon** to edit it
+6. Find this comment block (use `Ctrl+F` / `Cmd+F` to search for `HOW TO ADD`):
 
 ```
 <!-- ============================================================
@@ -62,7 +74,7 @@ Write your post in a Google Doc or notes app first. Have ready:
      ...
 ```
 
-4. Follow the instructions inside that comment:
+7. Follow the instructions inside that comment:
    - **First time only:** delete the `<div class="empty-state">` block (the "posts coming soon" message) — search for `empty-state` to find it
    - **First time only:** uncomment the `<div class="blog-grid">` by deleting the `<!--` line above it and the `-->` line at the very end
    - Copy one `<article class="blog-card">` block and fill in the four `[REPLACE: ...]` items:
@@ -73,15 +85,35 @@ Write your post in a Google Doc or notes app first. Have ready:
      - **Excerpt** — the 1-2 sentence summary
    - Put the newest post at the **top** of the grid
 
-5. Scroll down, write a commit message like `Add post card: World TB Day 2026`, and click **Commit changes**
+8. Scroll down to **Commit changes** and click it
+9. Write a commit message like `Add post card: World TB Day 2026`
+10. Make sure **"Commit directly to [your branch name]"** is selected
+11. Click **Commit changes**
 
 ---
 
-## Step 4 — Check your work
+## Step 4 — Submit for review
 
-Visit the live site at **https://togetheragainsttb.org/blog.html** — it may take a minute or two for changes to appear. Click through to your post to make sure everything looks right.
+Now that both files are updated, you can open the pull request.
 
-If something looks off, go back to GitHub and edit the file to fix it.
+1. Click the **Pull requests** tab at the top of the repository
+2. Click **New pull request**
+3. Set it up so that:
+   - **base:** `main`
+   - **compare:** your branch (the one you created in Step 2)
+4. Click **Create pull request**
+5. Give it a title (e.g. `New post: World TB Day 2026`) and optionally add a note for Sophie
+6. Click **Create pull request**
+
+Sophie will get a notification to review your post. Once she approves and merges it, the post will go live automatically.
+
+---
+
+## Step 5 — Check your work
+
+Once Sophie has merged the pull request, visit the live site at **https://togetheragainsttb.org/blog.html** — it may take a minute or two to appear. Click through to your post to make sure everything looks right.
+
+If anything needs fixing, open a new pull request with the correction (follow the same steps above).
 
 ---
 
