@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News, stories, and updates from Together Against TB — supporting TB patients in the San Francisco Bay Area.">
+  <title>Blog | Together Against TB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 35px;
+      margin-top: 50px;
+    }
+
+    .blog-card {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .blog-card-body {
+      padding: 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .blog-tag {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .blog-date {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .blog-card h3 {
+      color: var(--navy);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .blog-card p {
+      color: var(--text-light);
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .blog-card a.read-more {
+      color: var(--teal);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .blog-card a.read-more:hover {
+      color: var(--navy);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 80px 20px;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .empty-state .icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .empty-state h3 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .empty-state p {
+      color: var(--text-light);
+      margin-bottom: 25px;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .filter-btn {
+      background: none;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      padding: 7px 20px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--navy);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/TaT logo - wide_transparent.png" alt="Together Against TB Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about-tb.html">About TB</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Blog</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <p class="subtitle">Updates, stories, and resources from Together Against TB.</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Organization Updates</button>
+        <button class="filter-btn">TB Education</button>
+        <button class="filter-btn">Community Stories</button>
+        <button class="filter-btn">Advocacy</button>
+      </div>
+
+      <div class="empty-state">
+        <div class="icon">&#9998;</div>
+        <h3>Posts coming soon</h3>
+        <p>We're working on stories and updates to share with you. Check back soon — and in the meantime, follow along with our work.</p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+
+      <!-- Blog cards go here when posts are ready. Example structure:
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-tag">Organization Updates</span>
+              <span class="blog-date">March 24, 2026</span>
+            </div>
+            <h3><a href="posts/post-title.html">Post Title Here</a></h3>
+            <p>Short excerpt or summary of the post content goes here.</p>
+            <a href="posts/post-title.html" class="read-more">Read more &rarr;</a>
+          </div>
+        </article>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Together Against TB is a 501(c)(3) nonprofit organization.</p>
+      <p>All donations are tax-deductible.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
